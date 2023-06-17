@@ -1,7 +1,7 @@
 --[[
 	Description: This file is part of timer_helper
 	Author: Lyu
-	Discord: lyu7
+	Discord: lyu07
 ]]
 
 local TimerType = {COUNTDOWN = 0, PERIODIC = 1}

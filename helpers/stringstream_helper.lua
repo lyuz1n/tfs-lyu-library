@@ -1,7 +1,7 @@
 --[[
 	Description: This file is part of stringstream_helper
 	Author: Lyu
-	Discord: lyu1
+	Discord: lyu07
 ]]
 
 local MT = {_VERSION = 'stringstream_helper.lua v2023.05.09'}

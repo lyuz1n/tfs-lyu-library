@@ -1,7 +1,7 @@
 --[[
 	Description: This file is part of vector_helper
 	Author: Lyu
-	Discord: lyu1
+	Discord: lyu07
 ]]
 
 local MT = {_VERSION = 'vector_helper.lua v2023.06.13'}

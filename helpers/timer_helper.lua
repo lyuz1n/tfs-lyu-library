@@ -86,7 +86,6 @@ function Countdown:start()
 	end
 
 	self.state = TimerState.STARTED
-	self.initialSeconds = self:getDuration():seconds()
 	register(self)
 
 	if isEventMethod('onStart', self.onStart) then

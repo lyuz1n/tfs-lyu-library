@@ -39,6 +39,8 @@ local function CountdownMethod(self, object)
 
 	object.state = TimerState.CREATED
 	object.type = TimerType.COUNTDOWN
+	object.duration = Duration {seconds = duration:seconds()}
+	
 	setmetatable(object, Countdown)
 
 	if object.autoStart then

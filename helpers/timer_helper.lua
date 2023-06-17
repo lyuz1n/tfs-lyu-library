@@ -10,9 +10,11 @@ local TimerState = {CREATED = 0, STARTED = 1, FINISHED = 2, CANCELED = 3}
 if not Timer then
 	Timer = {
 		_VERSION = 'timer_helper.lua v2023.05.07',
-	
-		countdowns = {},
-		periodics = {}
+		
+		timers = {
+			[TimerType.COUNTDOWN] = {},
+			[TimerType.PERIODIC] = {}
+		}
 	}
 end
 
@@ -50,15 +52,7 @@ local function CountdownMethod(self, object)
 end
 
 local function getTimerList(timer)
-	local list = nil
-	
-	if timer.type == TimerType.COUNTDOWN then
-		list = Timer.countdowns
-	elseif timer.type == TimerType.PERIODIC then
-		list = Timer.periodics
-	end
-
-	return list
+	return Timer.timers[timer.type]
 end
 
 local function register(timer)
